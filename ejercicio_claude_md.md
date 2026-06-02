@@ -9,6 +9,20 @@
 
 ---
 
+## Qué vas a aprender
+
+`CLAUDE.md` es un archivo de texto que Claude Code lee al arrancar en un repositorio. Sirve para darle contexto persistente sobre el proyecto: cómo se ejecuta, qué convenciones sigue el equipo, qué decisiones de diseño no son obvias leyendo el código, y qué restricciones debe respetar al modificarlo.
+
+Sin ese archivo, Claude trabaja con criterios genéricos. Con él, trabaja con el conocimiento específico del proyecto.
+
+El ejercicio tiene tres partes:
+
+1. **Descubrimiento:** compararás lo que genera `/init` en un repositorio vacío frente a uno real, y verás qué detecta Claude automáticamente y qué no.
+2. **Observación:** comprobarás que la aplicación funciona y obtendrás una revisión de código sin ninguna instrucción personalizada, como punto de partida.
+3. **Control:** añadirás reglas concretas a `CLAUDE.md` y verificarás que Claude las respeta al revisar, verificar y generar código nuevo.
+
+---
+
 ## Parte 1. Descubrimiento
 
 ### Paso 1. `/init` en un repositorio vacío
