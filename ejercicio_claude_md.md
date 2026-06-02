@@ -1,14 +1,5 @@
 # Ejercicio: CLAUDE.md
 
----
-
-## Repositorios del ejercicio
-
-**Python:** `python-claude-client` — https://github.com/leroidubuffet/python-claude-client
-**Java:** `java-tasks-api` — https://github.com/leroidubuffet/java-tasks-api
-
----
-
 ## Qué vas a aprender
 
 `CLAUDE.md` es un archivo de texto que Claude Code lee al arrancar en un repositorio. Sirve para darle contexto persistente sobre el proyecto: cómo se ejecuta, qué convenciones sigue el equipo, qué decisiones de diseño no son obvias leyendo el código, y qué restricciones debe respetar al modificarlo.
