@@ -2,12 +2,14 @@ package com.curso.tasks.controller;
 
 import com.curso.tasks.model.ApiResponse;
 import com.curso.tasks.model.Task;
+import com.curso.tasks.model.TaskStatsResponse;
 import com.curso.tasks.service.TaskService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/tasks")
@@ -26,6 +28,21 @@ public class TaskController {
                 ? taskService.findByStatus(status)
                 : taskService.findAll();
         return ResponseEntity.ok(ApiResponse.ok(tasks));
+    }
+
+    /**
+     * Returns task counts grouped by status.
+     *
+     * @return task counts per status wrapped in {@link ApiResponse}
+     */
+    @GetMapping("/stats")
+    public ResponseEntity<ApiResponse<TaskStatsResponse>> getStats() {
+        return ResponseEntity.ok(ApiResponse.ok(taskService.getStats()));
+    }
+
+    @GetMapping("/grouped")
+    public ResponseEntity<ApiResponse<Map<Task.Status, List<Task>>>> getGrouped() {
+        return ResponseEntity.ok(ApiResponse.ok(taskService.groupByStatus()));
     }
 
     @GetMapping("/{id}")
