@@ -12,6 +12,8 @@ El ejercicio tiene tres partes:
 2. **Observación:** comprobarás que la aplicación funciona y obtendrás una revisión de código sin ninguna instrucción personalizada, como punto de partida.
 3. **Control:** añadirás reglas concretas a `CLAUDE.md` y verificarás que Claude las respeta al revisar, verificar y generar código nuevo.
 
+> **Nota sobre este repositorio:** El `CLAUDE.md` está en `.gitignore` de forma intencionada, para que cada alumno cree el suyo durante el ejercicio. En un proyecto real se commitea junto con el código para que todo el equipo comparta el mismo contexto.
+
 ---
 
 ## Parte 1. Descubrimiento
@@ -68,6 +70,8 @@ Ejecuta de nuevo el mismo comando:
 Compara el resultado con el del paso anterior. Claude ahora detecta el stack, las dependencias, los comandos de instalación y test, y los patrones arquitectónicos del proyecto.
 
 > **Para reflexionar:** ¿Hay algo importante que haya pasado por alto? ¿Cambiarías o añadirías algo al CLAUDE.md generado?
+>
+> Pista: Claude detecta el stack, los comandos y la estructura, pero nunca puede inferir decisiones de equipo no escritas en el código. ¿Hay alguna decisión de diseño en este proyecto que hayas tenido que leer varios archivos para entender, y que no aparece en el CLAUDE.md generado? Esa es exactamente la información que debes añadir a mano.
 
 ---
 
@@ -152,6 +156,8 @@ Pide a Claude que compruebe si el código actual cumple las reglas que acabas de
 > **Qué hace `/verify`:** Arranca la aplicación, la conduce hasta los puntos de código que quiere comprobar y captura lo que observa. No lee el código y razona sobre él, sino que lo ejecuta. Para verificar una regla como "nunca se loguea contenido de mensajes", lanza la app, provoca una interacción real y comprueba lo que aparece en el log.
 
 > **Para reflexionar:** ¿Cumple el código ya las dos reglas? ¿Ha encontrado Claude algún caso que las viola o las roza?
+>
+> Si Claude detecta un caso que roza una regla, decide si la regla está mal redactada (afínala) o si el código no la cubre del todo (corrígelo). Ese ciclo refinar-verificar es el uso real del CLAUDE.md.
 
 #### Fase B: Generar código nuevo y observar si respeta las reglas
 
