@@ -43,4 +43,5 @@ mvn test
 ---
 
 Este repositorio es material de ejercicio del curso **IA generativa en el desarrollo de software**.
-Sigue las instrucciones del ejercicio en [`ejercicio_claude_md.md`](./ejercicio_claude_md.md).
+
+Los archivos [`ejercicio_claude_md.md`](./ejercicio_claude_md.md), [`ejercicio_subagents.md`](./ejercicio_subagents.md) y [`ejercicio_antigravity.md`](./ejercicio_antigravity.md) tienen instrucciones para los ejercicios.
