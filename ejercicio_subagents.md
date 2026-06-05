@@ -8,6 +8,8 @@
 
 ---
 
+> **Prerequisito:** Este ejercicio hace referencia a las reglas definidas en `CLAUDE.md` durante el ejercicio anterior. Si no lo has hecho, añade primero las `## Project rules` al `CLAUDE.md` siguiendo las instrucciones de `ejercicio_claude_md.md` (Parte 3, Paso 5).
+
 ## Qué vas a aprender
 
 Un subagente es un agente con su propio contexto, sus propias herramientas y un objetivo único. Claude Code puede invocarlos automáticamente cuando le pides que coordine trabajo entre varios de ellos.

@@ -13,6 +13,11 @@ git clone https://github.com/leroidubuffet/java-tasks-api
 cd java-tasks-api
 ```
 
+> **Nota si ya hiciste el ejercicio de subagentes:** ese ejercicio implementa el mismo endpoint `GET /api/tasks/stats` que se pide en la Tarea A de este ejercicio. Para empezar con el código limpio, ejecuta:
+> ```bash
+> git checkout src/
+> ```
+
 ---
 
 ## Qué vas a aprender
@@ -35,8 +40,8 @@ En Antigravity, abre la carpeta `java-tasks-api`. Comprueba que el proyecto se c
 
 ### Paso 3. Cambiar entre vista Manager y Editor
 
-Dese vista Manager pulsa el botón **Open Editor** en la barra superior (o usa el atajo **Cmd + E** para alternar entre Editor y Manager).
-Dese vista Editor pulsa el botón **OPen Agent Manager** en la barra superior (o usa el atajo **Cmd + E** para alternar entre Editor y Manager).
+Desde vista Manager pulsa el botón **Open Editor** en la barra superior (o usa el atajo **Cmd + E** para alternar entre Editor y Manager).
+Desde vista Editor pulsa el botón **Open Agent Manager** en la barra superior (o usa el atajo **Cmd + E** para alternar entre Editor y Manager).
 
 La vista Manager muestra un panel vacío con el botón para añadir tareas. Aquí es donde vas a orquestar el trabajo paralelo.
 
