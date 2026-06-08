@@ -12,7 +12,7 @@ El ejercicio tiene tres partes:
 2. **Observación:** comprobarás que la aplicación funciona y obtendrás una revisión de código sin ninguna instrucción personalizada, como punto de partida.
 3. **Control:** añadirás reglas concretas a `CLAUDE.md` y verificarás que Claude las respeta al revisar, verificar y generar código nuevo.
 
-> **Nota sobre este repositorio:** El `CLAUDE.md` está en `.gitignore` de forma intencionada, para que cada alumno cree el suyo durante el ejercicio. En un proyecto real se commitea junto con el código para que todo el equipo comparta el mismo contexto.
+> **Nota sobre este repositorio:** El `CLAUDE.md` está en `.gitignore` de forma intencionada, para que crees el tuyo durante el ejercicio. En un proyecto real se commitea junto con el código para que todo el equipo comparta el mismo contexto.
 
 ---
 
