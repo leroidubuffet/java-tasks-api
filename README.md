@@ -39,9 +39,3 @@ La consola H2 esta en `http://localhost:8080/h2-console`.
 ```bash
 mvn test
 ```
-
----
-
-Este repositorio es material de ejercicio del curso **IA generativa en el desarrollo de software**.
-
-Los archivos [`ejercicio_claude_md.md`](./ejercicio_claude_md.md), [`ejercicio_subagents.md`](./ejercicio_subagents.md) y [`ejercicio_antigravity.md`](./ejercicio_antigravity.md) tienen instrucciones para los ejercicios.
