@@ -97,7 +97,7 @@ Una vez que la aplicación esté corriendo, responde esta pregunta mirando el CL
 
 ### Paso 4. Revisión de código sin reglas propias
 
-Con la aplicación funcionando, pide una revisión del código:
+Una vez has comprobado que la aplicación funciona pide una revisión del código:
 
 ```
 /code-review
@@ -145,21 +145,7 @@ Abre CLAUDE.md y añade una sección `## Project rules` con estas dos reglas:
 
 Este paso tiene dos fases.
 
-#### Fase A: Verificar el código existente
-
-Pide a Claude que compruebe si el código actual cumple las reglas que acabas de definir:
-
-```
-/verify
-```
-
-> **Qué hace `/verify`:** Arranca la aplicación, la conduce hasta los puntos de código que quiere comprobar y captura lo que observa. No lee el código y razona sobre él, sino que lo ejecuta. Para verificar una regla como "nunca se loguea contenido de mensajes", lanza la app, provoca una interacción real y comprueba lo que aparece en el log.
-
-> **Para reflexionar:** ¿Cumple el código ya las dos reglas? ¿Ha encontrado Claude algún caso que las viola o las roza?
->
-> Si Claude detecta un caso que roza una regla, decide si la regla está mal redactada (afínala) o si el código no la cubre del todo (corrígelo). Ese ciclo refinar-verificar es el uso real del CLAUDE.md.
-
-#### Fase B: Generar código nuevo y observar si respeta las reglas
+#### Fase A: Generar código nuevo y observar si respeta las reglas
 
 Ahora pide a Claude que añada funcionalidad nueva:
 
@@ -182,6 +168,19 @@ Observa el código que genera Claude.
 >
 > Si Claude ha violado una regla, reformúlala hasta que la cumpla. ¿Qué cambio en la redacción marca la diferencia?
 
+#### Fase B: Verificar el código existente
+
+Pide a Claude que compruebe si el código actual cumple las reglas que acabas de definir:
+
+```
+/verify
+```
+
+> **Qué hace `/verify`:** Arranca la aplicación, la conduce hasta los puntos de código que quiere comprobar y captura lo que observa. No lee el código y razona sobre él, sino que lo ejecuta. Para verificar una regla como "nunca se loguea contenido de mensajes", lanza la app, provoca una interacción real y comprueba lo que aparece en el log.
+
+> **Para reflexionar:** ¿Cumple el código ya las dos reglas? ¿Ha encontrado Claude algún caso que las viola o las roza?
+>
+> Si Claude detecta un caso que roza una regla, decide si la regla está mal redactada (afínala) o si el código no la cubre del todo (corrígelo). Ese ciclo refinar-verificar es el uso real del CLAUDE.md.
 ---
 
 ### Paso 7. Refactorización guiada por las reglas
